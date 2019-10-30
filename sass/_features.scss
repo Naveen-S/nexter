@@ -8,6 +8,7 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // auto-fit but min is 250 max is you decide.
     grid-gap: 6rem;
     align-items: start;
+    margin: 15rem auto;
 }
 
 .feature {
@@ -25,5 +26,6 @@
     }
 
     &__text {
+        font-size: 1.7rem;
     }
 } 
