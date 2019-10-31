@@ -13,7 +13,7 @@
     <title>nexter &mdash; your home, your freedom</title>
 </head>
 
-<body class="container">
+<body onload="getDate()" class="container">
     <div class="sidebar">
         sidebar
     </div>
@@ -402,8 +402,24 @@
     </div>
 
     <footer class="footer">
-        Footer
+        <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Download home planner</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Sumbit your property</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Come work with us!</a></li>
+        </ul>
+        <p class="footer__copyright">
+            &copy; Copyright <span id="copyright__date"></span> by Naveen. 
+        </p>
     </footer>
+    <script type="text/javascript">
+        function getDate() {
+            var date = new Date().getFullYear();
+            document.getElementById("copyright__date").innerHTML = date;
+        }
+    </script>
 </body>
 
 </html>

@@ -280,4 +280,30 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-top: 6rem;
+    text-align: center; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; }
+  .nav__link {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem;
+    transition: all 0.2s;
+    display: block; }
+  .nav__link:hover {
+    transform: translateY(-1rem);
+    background-color: #142437; }
