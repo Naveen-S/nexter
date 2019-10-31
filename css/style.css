@@ -64,7 +64,25 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-row: 1 / -1;
-  grid-column: sidebar-start / sidebar-end; }
+  grid-column: sidebar-start / sidebar-end;
+  display: flex;
+  justify-content: center; }
+  .sidebar-btn {
+    display: block;
+    width: 4.5rem;
+    height: 2px;
+    background-color: #f9f7f6;
+    margin-top: 4rem; }
+    .sidebar-btn::before, .sidebar-btn::after {
+      content: '';
+      display: block;
+      width: 4.5rem;
+      height: 2px;
+      background-color: #f9f7f6; }
+    .sidebar-btn::before {
+      transform: translateY(-1.5rem); }
+    .sidebar-btn::after {
+      transform: translateY(1.3rem); }
 
 .header {
   background-color: #54483A;
